@@ -46,8 +46,10 @@ public class InstrumentServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@SuppressWarnings("unchecked")
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("backWood值："+request.getParameter("backWood"));
+		System.out.println("instrumentType值："+request.getParameter("instrumentType"));
 		InstrumentService instrumentSrv = new InstrumentService();
 		//根据查询条件构造InstrumentSpec，通常可以使用对象反序列化技术
 		Inventory inventory = instrumentSrv.getInventory();
@@ -98,7 +100,7 @@ public class InstrumentServlet extends HttpServlet {
 		          instrument.getPrice() + "\n---");
 		      }
 		    } else {
-			      request.setAttribute("matchingInstruments", matchingInstruments);
+			      request.setAttribute("matchingInstruments", (List<Instrument>)matchingInstruments);
 		      System.out.println("Sorry, Bryan, we have nothing for you.");
 		    }
 //		InstrumentSpec searchSpec = new InstrumentSpec(null);
@@ -106,8 +108,9 @@ public class InstrumentServlet extends HttpServlet {
 		
 		// TODO Auto-generated method stub
 		 RequestDispatcher rd = 
-	                request.getRequestDispatcher("/guitar/InstrumentService.jsp");
+	                request.getRequestDispatcher("/guitar/serach.jsp");
 			rd.forward(request, response);
+			 System.out.println(matchingInstruments);
 	}
 
 	/**

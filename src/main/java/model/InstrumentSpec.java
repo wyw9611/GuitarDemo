@@ -29,12 +29,6 @@ public class InstrumentSpec {
     for (Iterator i = otherSpec.getProperties().keySet().iterator(); 
          i.hasNext(); ) {
       String propertyName = (String)i.next();
-      System.out.println("propertyName"+propertyName);
-      System.out.println("propertie"+properties);
-      System.out.println("propertie:"+properties.get(propertyName));
-	  System.out.println(properties.getClass().getName());
-	  System.out.println("otherSpe :"+otherSpec.getProperty(propertyName));
-	  System.out.println(otherSpec.getClass().getName());
       if (!properties.get(propertyName).equals(
            otherSpec.getProperty(propertyName))) {
     	  System.out.println("properties:"+properties.get(propertyName));

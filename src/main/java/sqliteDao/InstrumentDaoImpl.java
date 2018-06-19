@@ -31,6 +31,7 @@ public class InstrumentDaoImpl implements InstrumentDao {
 				properties.put("topWood", Wood.fromString(rs.getString("topWood")));
 				properties.put("style", Style.fromString(rs.getString("style")));
 				properties.put("type", Type.fromString(rs.getString("type")));
+				properties.put("instrumentType", InstrumentType.fromString(rs.getString("instrumentType")));
 				InstrumentSpec spec = new InstrumentSpec(properties);
 				
 				Instrument instrument = new Instrument(rs.getString("serialNumber"),rs.getDouble("price"),spec);

@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -41,15 +41,15 @@
 
 			                       <option value="Fender">Fender</option>
 
-			                       <option value="MARTIN">Martin</option>
+			                       <option value="Martin">Martin</option>
 
-			                       <option value="GIBSON">Gibson</option>
+			                       <option value="Gibson">Gibson</option>
 
-			                       <option value="COLLINGS">Collings</option>
+			                       <option value="Collings">Collings</option>
 
-			                       <option value="OLSON">Olson</option>
+			                       <option value="Olson">Olson</option>
 
-			                       <option value="RYAN">Ryan</option>
+			                       <option value="Ryan">Ryan</option>
 
 			                       <option value="PRS">PRS</option>
 
@@ -71,7 +71,7 @@
 
 			                       <option value="acoustic">acoustic</option>
 
-			                       <option value="ELECTRIC">electric</option>
+			                       <option value="electric">electric</option>
 			                       
 			                       <option value="Unspecified">Unspecified</option>
 
@@ -95,21 +95,21 @@
 
 		                       <option value="Indian Rosewood">Indian Rosewood</option>
 
-		                       <option value="BRAZILIAN ROSEWOOD">Brazilian Rosewood</option>
+		                       <option value="Brazilian Rosewood">Brazilian Rosewood</option>
 
-		                       <option value="MAHOGANY">Mahogany</option>
+		                       <option value="Mahogany">Mahogany</option>
 
-		                       <option value="MAPLE">Maple</option>
+		                       <option value="Maple">Maple</option>
 
-		                       <option value="COCOBOLO">Cocobolo</option>
+		                       <option value="Cocobolo">Cocobolo</option>
 
-		                       <option value="CEDAR">Cedar</option>
+		                       <option value="Cedar">Cedar</option>
 
-		                       <option value="ADIRONDACK">Adirondack</option>
+		                       <option value="Adirondack">Adirondack</option>
 
-		                       <option value="ALDER">Alder</option>
+		                       <option value="Alder">Alder</option>
 
-		                       <option value="SITKA">Sitka</option>
+		                       <option value="Sitka">Sitka</option>
 		                       
 		                       <option value="Unspecified">Unspecified</option>
 
@@ -129,21 +129,21 @@
 
 		                       <option value="Indian Rosewood">Indian Rosewood</option>
 
-		                       <option value="BRAZILIAN ROSEWOOD">Brazilian Rosewood</option>
+		                       <option value="Brazilian Rosewood">Brazilian Rosewood</option>
 
-		                       <option value="MAHOGANY">Mahogany</option>
+		                       <option value="Mahogany">Mahogany</option>
 
-		                       <option value="MAPLE">Maple</option>
+		                       <option value="Maple">Maple</option>
 
-		                       <option value="COCOBOLO">Cocobolo</option>
+		                       <option value="Cocobolo">Cocobolo</option>
 
-		                       <option value="CEDAR">Cedar</option>
+		                       <option value="Cedar">Cedar</option>
 
-		                       <option value="ADIRONDACK">Adirondack</option>
+		                       <option value="Adirondack">Adirondack</option>
 
-		                       <option value="ALDER">Alder</option>
+		                       <option value="Alder">Alder</option>
 
-		                       <option value="SITKA">Sitka</option>
+		                       <option value="Sitka">Sitka</option>
 		                       
 		                       <option value="Unspecified">Unspecified</option>
 
@@ -165,7 +165,7 @@
 
 		                       <option value="A style">A style</option>
 
-		                       <option value="F">F style</option>
+		                       <option value="F style">F style</option>
 		                       
 		                       <option value="Unspecified">Unspecified</option>
 
@@ -185,15 +185,15 @@
 
 		                       <option value="Guitar">Guitar</option>
 
-		                       <option value="BANJO">Banjo</option>
+		                       <option value="Banjo">Banjo</option>
 		                       
-		                       <option value="DOBRO">Dobro</option>
+		                       <option value="Dobro">Dobro</option>
 		                       
-		                        <option value="FIDDLE">Fiddle</option>
+		                        <option value="Fiddle">Fiddle</option>
 
-		                       <option value="BASS">Bass</option>
+		                       <option value="Bass">Bass</option>
 		                       
-		                       <option value="MANDOLIN">Mandolin</option>
+		                       <option value="Mandolin">Mandolin</option>
 		                       
 		                       <option value="Unspecified">Unspecified</option>
 
@@ -265,23 +265,8 @@
 		        
 				<tbody>
 				    <tr>
-				      <tr>
-
-		                <th>${inventory.builder}</th>
-
-		                <th>${inventory.model}</th>
-
-		                <th>${inventory.type}</th>
-
-		                <th>${inventory.numStrings}</th>
-
-		                <th>${inventory.backWood}</th>
-
-		                <th>${inventory.topWood}</th>
-
-		                <th>${inventory.price}</th>
-
-		            </tr>
+				    <th>matchingInstrument</th>
+				   
 				</tbody>
 
 		    </table>
