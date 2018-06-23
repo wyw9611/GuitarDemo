@@ -245,19 +245,19 @@
 
 		            <tr>
 
-		                <th>Builder</th>
+		                <th>Fender</th>
 
-		                <th>Model</th>
+		                <th>Guitar</th>
 
-		                <th>Type</th>
+		                <th>acoustic</th>
 
-		                <th>NumStrings</th>
+		                <th>1</th>
 
-		                <th>BackWood</th>
+		                <th>Indian Rosewood</th>
 
-		                <th>TopWood</th>
+		                <th>Indian Rosewood</th>
 
-		                <th>Price</th>
+		                <th>12</th>
 
 		            </tr>
 
@@ -265,7 +265,7 @@
 		        
 				<tbody>
 				    <tr>
-				    <th>matchingInstrument</th>
+				    <th></th>
 				   
 				</tbody>
 
